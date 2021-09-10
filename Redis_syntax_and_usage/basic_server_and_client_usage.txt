@@ -1,0 +1,33 @@
+
+
+
+#Start the redis server with the command "redis-server". The command should contain as its first argument an absolute path to a redis.conf configuration file
+
+redis-server /home/user/example_configuration_file.conf
+
+# Now you can interact with the redis instance at 127.0.0.1 on port 6379 by default
+
+
+$ redis-cli ping
+PONG
+
+
+# You use the redis-cli command without any argument to enter an interactive mode or simply use the redis-cli command with the proper arguments to get and set key-value pairs. For instance:
+
+
+# Set a key value pair
+$ redis-cli set some_key some_value
+
+
+
+# get a key value pair
+$ redis-cli get some_key
+"somevalue"
+
+
+
+# Shell scripts too can make use of redis databases.
+# In this directory there's a shell script that illustrates bash interaction with a redis database
+
+
+
